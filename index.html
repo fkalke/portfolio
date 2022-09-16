@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Portfólio | Fernando Kalke</title>
 </head>
@@ -13,17 +14,57 @@
     <header class="nav-bar">
         <div class="nav-bar-content container">
             <h1>Portfólio</h1>
+            <input class="menu-control" type="checkbox" id="menu-control">
             <ul class="header-menu">
+                <li class="close-icon">
+                    <label class="hamburger-icon" for="menu-control">
+                        <img class="close-icon-img" src="/img/icons/close-icon.svg" alt="Fechar menu">
+                    </label>
+                </li>
                 <li class="header-menu-item">Início</li>
                 <li class="header-menu-item">Sobre Mim</li>
                 <li class="header-menu-item">Portfólio</li>
                 <li class="header-menu-item">Contato</li>
             </ul>
+            <label class="hamburger-icon" for="menu-control">
+                <img src="/img/icons/hamburger.svg" alt="Abrir menu">
+            </label>
         </div>
     </header>
     <section class="home">
+        <div class="home-content container">
+            <div class="text-content">
+                <p>Olá!</p>
+                <h1>Sou o Fernando</h1>
+                <small>Desenvolvedor de sistemas.</small>
+            </div>
+            <div class="picture container">
+                <img class="picture-content" src="/img/minha-foto-3.webp" alt="Minha Foto">
+            </div>
+        </div>
+        <div class="social container">
+            <a href="https://github.com/fkalke" class="social-item">
+                <img class="social-item-img" src="/img/icons/github-icon.svg" alt="Perfil no Github">
+            </a>
+            <a href="https://github.com/fkalke" class="social-item">
+                <img class="social-item-img" src="/img/icons/linkedin-icon.svg" alt="Perfil no Linkedin">
+            </a>
+        </div>
     </section>
     <section class="about-me">
+        <div class="about-me-content container">
+            <h1>SOBRE MIM</h1>
+            <p>O dinamismo e a constante atualização da tecnologia não fizeram apenas com que eu me tornasse um
+                apaixonado
+                pela área, bem como me mostram o profissional que eu busco ser: dinâmico e em busca de constante
+                atualização. A curiosidade e a vontade de testar e aprender me moveram no início, só então depois vieram
+                os
+                cursos técnicos e hoje, a faculdade de Análise e Desenvolvimento de Sistemas. Atual Gerente de TI da
+                prefeitura da minha cidade, porém, com sede de aprendizado o suficiente para estar disposto a testar
+                novos
+                rumos e oportunidades. A tecnologia hoje, causa transformações em nossas vidas, e é ao lado dessa
+                transformação que eu pretendo estar.</p>
+        </div>
     </section>
     <section class="portfolio">
     </section>
