@@ -9,6 +9,10 @@ img{
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #474747;
@@ -19,7 +23,6 @@ body{
 }
 
 .home{
-    background-color: #474747;
     width: 100%;
     height: 500px;
     display: flex;
@@ -27,12 +30,28 @@ body{
     position: relative;
 }
 
+.home-background{
+    position: absolute;
+    z-index: -1;
+    opacity: 20%;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.home-background video{
+    width: 100%;
+    object-fit:fill;
+    object-position: center;
+    overflow: hidden;
+}
+
 .home-content{
     height: 100%;
     width: 100%;
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    display: flex; 
     justify-content:space-between;
     flex-direction: row;
 }
@@ -44,6 +63,7 @@ body{
 
 .home-content div h1{
     color: #ffab48;
+    font-size: 60px;
     font-weight: 900;
 }
 
@@ -55,16 +75,9 @@ body{
 
 .text-content{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-}
-
-.picture{
-    display: flex;
-    align-items: flex-end;
-}
-.picture-content{
-    max-height: 98%;
 }
 
 .social{
@@ -77,7 +90,6 @@ body{
 
 .social-item-img{
     margin: 0 5px;
-    opacity: 70%;
     width: 25px;
 }
 
@@ -92,96 +104,146 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
+    padding: 30px 0;
 }
 
 .about-me-content{
     color: #fff;
     text-align:justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.portfolio{
+.about-me-content-img{
+    margin-right: 20px;
+    border: 5px solid #ffab48;
+    height: 100%;
+}
 
+.about-me-content-img img{
+    display: flex;
+    min-width: 250px;
+    bottom: 0;
+    margin: 0;
+}
+
+.about-me-content-text{
+    width: auto;
+}
+
+.about-me-links{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.about-me-links-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 7px;
+    color: #fff;
+}
+
+.cv{
+    background-color: rgba(52, 165, 108, 0.719);
+}
+
+.cv:hover{
+    background-color: rgb(52, 165, 108);
+    transition: all 0.2s ease;
+}
+
+.github{
+    background-color: #6d8d8fb4;
+}
+
+.github:hover{
+    background-color: #6D8D8F;
+    transition: all 0.2s ease;
+}
+
+.linkedin{
+    background-color: #0a66c2a8;
+}
+
+.linkedin:hover{
+    background-color: #0A66C2;
+    transition: all 0.2s ease;
 }
 
 .contact{
-
+    display: flex;
+    justify-content: center;
 }
 
-/* Extra small devices (phones, 750px and down) */
-@media only screen and (max-width: 750px) {
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    color: #fff;
+    width: 100%;
+}
+
+.contact-methods{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 40px 0;
+    
+}
+
+.contact-methods-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact-methods-item-link{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    color: #fff;
+    width: max-content;
+}
+
+.whatsapp{
+    background-color: #42cba4b9;
+}
+
+.whatsapp:hover{
+    background-color: #42CBA5;
+    transition: all 0.2s ease;
+}
+
+.email{
+    background-color: #106dbeb2;
+}
+
+.email:hover{
+    background-color: #106EBE;
+    transition: all 0.2s ease;
+}
+
+.footer{
+    color: #fff;
+    background-color: #353535;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1140px) {
+    
+}
+
+@media only screen and (min-width: 700px) and (max-width: 880px) {
     .home{
-        background-color: #474747;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        position: relative;
+        height: 320px;
     }
-    
-    .home-content{
-        height: 100%;
-        width: 100%;
-        position: static;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-        justify-content:space-between;
-    }
-    
-    .home-content div p{
-        font-size: 30px;
-    }
-    
-    .home-content div h1{
-        font-size: 68px;
-    }
-    
-    .home-content div small{
-        font-size: 25px;
-    }
-    
-    .text-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .picture{
-        display: flex;
-        margin-top: 40px;
-        width: 70%;
-    }
-    .picture-content{
-        max-height: 98%;
-    }
-    
-    .social{
-        display: none;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 750px and up) */
-@media only screen and (min-width: 750px) {
-    .home-content div p{
-        font-size: 20px;
-    }
-    
-    .home-content div h1{
-        font-size: 38px;
-    }
-    
-    .home-content div small{
-        font-size: 15px;
-    }
-    .picture-content{
-        max-height: 75%;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 750px and up) */
-@media only screen and (min-width: 880px) {
     .home-content div p{
         font-size: 30px;
     }
@@ -191,30 +253,57 @@ body{
     }
     
     .home-content div small{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
-/* Medium devices (landscape tablets, 1140px and up) */
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 530px) and (max-width: 700px) {
+    .home{
+        height: 320px;
+    }
+
+    .home-background video{
+        width: auto;
+        height: 100%;
+    } 
+
+    .home-background{
+        object-fit: cover;
+    }
+
     .home-content div p{
         font-size: 30px;
     }
     
     .home-content div h1{
-        font-size: 68px;
+        font-size:50px;
     }
     
     .home-content div small{
-        font-size: 25px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .home{
+        height: 320px;
+    }
+
+    .home-background video{
+        width: auto;
+        height: 100%;
+    }    
+    
+    .home-content div p{
+        font-size: 30px;
     }
     
-    .picture{
-        display: flex;
-        align-items: flex-end;
+    .home-content div h1{
+        font-size:38px;
     }
-    .picture-content{
-        max-height: 98%;
+    
+    .home-content div small{
+        font-size: 18px;
     }
 }
 
