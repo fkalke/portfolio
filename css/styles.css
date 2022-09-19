@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
-img{
+img {
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #474747;
 }
 
-.container{
+.container {
     max-width: 85%;
 }
 
-.home{
+.home {
     width: 100%;
     height: 500px;
     display: flex;
@@ -30,57 +30,57 @@ body{
     position: relative;
 }
 
-.home-background{
+.home-background {
     position: absolute;
     z-index: -1;
     opacity: 20%;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     object-position: center;
     overflow: hidden;
 }
 
-.home-background video{
+.home-background video {
     width: 100%;
-    object-fit:fill;
+    object-fit: fill;
     object-position: center;
     overflow: hidden;
 }
 
-.home-content{
+.home-content {
     height: 100%;
     width: 100%;
     position: absolute;
-    display: flex; 
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
 }
 
-.home-content div p{
+.home-content div p {
     color: #fff;
     font-size: 30px;
 }
 
-.home-content div h1{
+.home-content div h1 {
     color: #ffab48;
     font-size: 60px;
     font-weight: 900;
 }
 
-.home-content div small{
+.home-content div small {
     color: #fff;
     font-size: 25px;
     margin-top: 0;
 }
 
-.text-content{
+.text-content {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -88,17 +88,17 @@ body{
     bottom: 0;
 }
 
-.social-item-img{
+.social-item-img {
     margin: 0 5px;
     width: 25px;
 }
 
-.social-item-img:hover{
+.social-item-img:hover {
     opacity: 100%;
     transition: all 0.2s ease;
 }
 
-.about-me{
+.about-me {
     background-color: #353535;
     display: flex;
     justify-content: center;
@@ -107,38 +107,38 @@ body{
     padding: 30px 0;
 }
 
-.about-me-content{
+.about-me-content {
     color: #fff;
-    text-align:justify;
+    text-align: justify;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.about-me-content-img{
+.about-me-content-img {
     margin-right: 20px;
     border: 5px solid #ffab48;
     height: 100%;
 }
 
-.about-me-content-img img{
+.about-me-content-img img {
     display: flex;
     min-width: 250px;
     bottom: 0;
     margin: 0;
 }
 
-.about-me-content-text{
+.about-me-content-text {
     width: auto;
 }
 
-.about-me-links{
+.about-me-links {
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
-.about-me-links-item{
+.about-me-links-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,61 +147,169 @@ body{
     color: #fff;
 }
 
-.cv{
+.cv {
     background-color: rgba(52, 165, 108, 0.719);
 }
 
-.cv:hover{
+.cv:hover {
     background-color: rgb(52, 165, 108);
     transition: all 0.2s ease;
 }
 
-.github{
+.github {
     background-color: #6d8d8fb4;
 }
 
-.github:hover{
+.github:hover {
     background-color: #6D8D8F;
     transition: all 0.2s ease;
 }
 
-.linkedin{
+.linkedin {
     background-color: #0a66c2a8;
 }
 
-.linkedin:hover{
+.linkedin:hover {
     background-color: #0A66C2;
     transition: all 0.2s ease;
 }
 
-.contact{
+.technologies {
     display: flex;
     justify-content: center;
 }
 
-.contact-content{
+.technologies-content {
+    margin: 20px 0;
+    width: 100%;
+    color: #fff;
+}
+
+.technologies-content-grid {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.technologies-content-grid-item {
+    max-width: 160px;
+    margin: 10px;
+    background-color: #353535;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+}
+
+.works-content {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    color: #fff;
+}
+
+.works-content-grid {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.card {
+    background-color:#353535;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tag-html {
+    background-color: #E56027;
+}
+
+.tag-css {
+    background-color: #27A0D4;
+}
+
+.tag-js {
+    background-color: #EFD23C;
+}
+
+.tag-spring {
+    background-color: #67AA3C;
+}
+
+.tag-bootstrap {
+    background-color: #7911EE;
+}
+
+.tag-java {
+    background-color: #E01E23;
+}
+
+.tag-mysql {
+    background-color: #006F88;
+}
+
+
+.card-body p {
+    font-size: 13px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #353535;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    align-items: center;
     margin: 40px 0;
+    padding: 30px;
     color: #fff;
     width: 100%;
 }
 
-.contact-methods{
+.contact-content-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 40px 0;
-    
 }
 
-.contact-methods-item{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.contact-methods-item-link{
+.contact-content-item-link {
     display: flex;
     align-items: center;
     padding: 7px;
@@ -209,25 +317,25 @@ body{
     width: max-content;
 }
 
-.whatsapp{
+.whatsapp {
     background-color: #42cba4b9;
 }
 
-.whatsapp:hover{
+.whatsapp:hover {
     background-color: #42CBA5;
     transition: all 0.2s ease;
 }
 
-.email{
+.email {
     background-color: #106dbeb2;
 }
 
-.email:hover{
+.email:hover {
     background-color: #106EBE;
     transition: all 0.2s ease;
 }
 
-.footer{
+.footer {
     color: #fff;
     background-color: #353535;
     height: 50px;
@@ -236,76 +344,72 @@ body{
     align-items: center;
 }
 
-@media only screen and (min-width: 880px) and (max-width: 1140px) {
-    
-}
+@media only screen and (min-width: 880px) and (max-width: 1140px) {}
 
 @media only screen and (min-width: 700px) and (max-width: 880px) {
-    .home{
+    .home {
         height: 320px;
     }
-    .home-content div p{
+
+    .home-content div p {
         font-size: 30px;
     }
-    
-    .home-content div h1{
+
+    .home-content div h1 {
         font-size: 50px;
     }
-    
-    .home-content div small{
+
+    .home-content div small {
         font-size: 20px;
     }
 }
 
 @media only screen and (min-width: 530px) and (max-width: 700px) {
-    .home{
+    .home {
         height: 320px;
     }
 
-    .home-background video{
+    .home-background video {
         width: auto;
         height: 100%;
-    } 
+    }
 
-    .home-background{
+    .home-background {
         object-fit: cover;
     }
 
-    .home-content div p{
+    .home-content div p {
         font-size: 30px;
     }
-    
-    .home-content div h1{
-        font-size:50px;
+
+    .home-content div h1 {
+        font-size: 50px;
     }
-    
-    .home-content div small{
+
+    .home-content div small {
         font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 530px) {
-    .home{
+    .home {
         height: 320px;
     }
 
-    .home-background video{
+    .home-background video {
         width: auto;
         height: 100%;
-    }    
-    
-    .home-content div p{
+    }
+
+    .home-content div p {
         font-size: 30px;
     }
-    
-    .home-content div h1{
-        font-size:38px;
+
+    .home-content div h1 {
+        font-size: 38px;
     }
-    
-    .home-content div small{
+
+    .home-content div small {
         font-size: 18px;
     }
 }
-
-
-
