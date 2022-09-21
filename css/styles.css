@@ -357,11 +357,13 @@ html{
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #FFAB48;
+    background-color: #ffaa48a3;
     color: white;
     cursor: pointer;
     width: 60px;
     height: 60px;
+    align-items: center;
+    justify-content: center;
     border-radius: 30px;
     font-size: 18px;
     animation: showBtn 0.3s linear;
@@ -377,13 +379,16 @@ html{
 }
 
 .topBtn:hover {
-    background-color: #E56027;
+    background-color: #FFAB48;
     transition: all 0.2s ease;
 }
 
 .topBtn img{
     width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -464,6 +469,12 @@ html{
         flex-direction: column;
     }
 
+    .about-me-content-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .about-me-content-img img {
         max-width: 260px;
     }
@@ -523,6 +534,9 @@ html{
 
     .about-me-content-img {
         margin: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .about-me-content-img img {
