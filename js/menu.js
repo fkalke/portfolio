@@ -23,3 +23,6 @@ function fecharMenu(){
         checkBox.click();
     }
 }
+
+//forçando autoplay no video de fundo da home
+document.getElementById('homeVideo').play();
